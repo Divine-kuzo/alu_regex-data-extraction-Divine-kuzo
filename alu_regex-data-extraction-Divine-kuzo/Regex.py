@@ -40,3 +40,16 @@ def extract_currency_amounts(text):
     pattern = r'\$\d{1,3}(?:,\d{3})*(?:\.\d{2})?'
     return re.findall(pattern, text)
 
+# Sample text
+test_text = """
+Emails: divinegahima@gmail.com, divine.
+divine@company.co.uk
+URLs: https://www.divine.com, http://subdomain.example.org/page
+Phones: (123) 456-7890, 123-456-7890, 123.456.7890
+Credit Cards: 1234 5678 9012 3456, 1234-5678-9012-3456
+Times: 14:30, 2:30 PM
+HTML: <p>, <div class="example">, <img src="image.jpg" alt="description">
+Hashtags: #example, #ThisIsAHashtag
+Currency: $19.99, $1,234.56
+"""
+print("Extracted Emails:", extract_emails(test_text))
