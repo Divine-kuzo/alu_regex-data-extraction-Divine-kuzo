@@ -53,3 +53,10 @@ Hashtags: #example, #ThisIsAHashtag
 Currency: $19.99, $1,234.56
 """
 print("Extracted Emails:", extract_emails(test_text))
+print("Extracted URLs:", extract_urls(test_text))
+print("Extracted Phone Numbers:", extract_phone_numbers(test_text))
+print("Extracted Credit Card Numbers:", extract_credit_card_numbers(test_text))
+print("Extracted Times:", extract_time(test_text))
+print("Extracted HTML Tags:", extract_html_tags(test_text))
+print("Extracted Hashtags:", extract_hashtags(test_text))
+print("Extracted Currency Amounts:", extract_currency_amounts(test_text))
