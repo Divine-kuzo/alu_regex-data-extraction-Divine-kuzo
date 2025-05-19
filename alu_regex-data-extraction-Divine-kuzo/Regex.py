@@ -36,4 +36,7 @@ def extract_hashtags(text):
     pattern = r'#[A-Za-z0-9_]+'
     return re.findall(pattern, text)
 
+def extract_currency_amounts(text):
+    pattern = r'\$\d{1,3}(?:,\d{3})*(?:\.\d{2})?'
+    return re.findall(pattern, text)
 
