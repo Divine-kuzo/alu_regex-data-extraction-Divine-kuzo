@@ -1,4 +1,4 @@
-# Regex Data Extraction by Divine Kuzo
+# Regex Data Extraction 
 
 This project uses Python and regular expressions (regex) to find useful information in text.
 
